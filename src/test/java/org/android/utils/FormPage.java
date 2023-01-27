@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.android.utils.AndroidActions;
 
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
 
 public class FormPage extends AndroidActions {
@@ -30,6 +31,12 @@ public class FormPage extends AndroidActions {
 	public void setNameField(String name) {
 		nameField.sendKeys(name);
 		driver.hideKeyboard();
+	}
+	
+	public void setActivity() throws InterruptedException {
+		Activity activity = new Activity("com.androidsample.generalstore", "com.androidsample.generalstore.SplashActivity");
+		driver.startActivity(activity);
+		Thread.sleep(10000);
 	}
 	
 	public void setGender(String gender) {

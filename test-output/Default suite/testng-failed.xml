@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.dbradfordportfolio.ECommerce_tc_4">
+      <class name="org.dbradfordportfolio.ECommerce_tc_2">
         <methods>
-          <include name="ConfigureAppium"/>
           <include name="FillForm"/>
-          <include name="tearDown"/>
+          <include name="FillForm_PositiveFlow"/>
+          <include name="preSetup"/>
         </methods>
-      </class> <!-- org.dbradfordportfolio.ECommerce_tc_4 -->
+      </class> <!-- org.dbradfordportfolio.ECommerce_tc_2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 
+import org.android.utils.AppiumUtils;
 import org.android.utils.FormPage;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -20,9 +21,11 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 public class EcommerceBaseTest {
+	
 	public AndroidDriver driver;
 	public AppiumDriverLocalService service;
 	public FormPage formPage;
+	
 	
 	@BeforeClass
 	public void ConfigureAppium() throws MalformedURLException {
